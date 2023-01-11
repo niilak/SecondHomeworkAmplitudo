@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Drugi domaći</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="text-center mt-5 mb-4">My movie list</h3>
+    </header>
+    <main class="px-5">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary float-end mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Add new movie
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Add your new movie
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="/index.html">
+                <label for="movie" class="w70">Movie:</label>
+                <input type="text" name="movie" class="w-75 mb-2" />
+                <br />
+
+                <label for="year" class="w70">Year:</label>
+                <input type="number" name="year" class="w-75 mb-2" />
+                <br />
+
+                <label for="country " class="w70">Country:</label>
+                <input type="text" name="country" class="w-75 mb-2" />
+                <br />
+
+                <label for="Note" class="w70">Note:</label>
+                <input type="text" name="note" class="w-75 mb-2" />
+                <br />
+
+                <label for="actor" class="w70">Actors:</label>
+                <input
+                  type="text"
+                  name="actor"
+                  class="mb-2 w-75"
+                  placeholder="Separate names with a comma"
+                />
+                <br />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="add-btn"
+                data-bs-dismiss="modal"
+              >
+                Add movie
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Movie</th>
+            <th scope="col">Year</th>
+            <th scope="col">Country</th>
+            <th scope="col">Note</th>
+            <th scope="col">Actors</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr class="to-watch border-b-gray">
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </th>
+            <td>The Shining</td>
+            <td>1980</td>
+            <td>United States</td>
+            <td>psychological horror</td>
+            <td>Jack Nicholson, Shelley Duvall</td>
+          </tr>
+
+          <tr class="to-watch border-b-gray">
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </th>
+            <td>City of God</td>
+            <td>2002</td>
+            <td>Brasil</td>
+            <td>crime film</td>
+            <td>Alexandre Rodrigues, Leandro Firmino</td>
+          </tr>
+
+          <tr class="to-watch border-b-gray">
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </th>
+            <td>Demolition</td>
+            <td>2015</td>
+            <td>United States</td>
+            <td>comedy-drama</td>
+            <td>Jake Gyllenhaal, Naomi Watts</td>
+          </tr>
+
+          <tr class="to-watch border-b-gray">
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </th>
+            <td>Pan's Labyrinth</td>
+            <td>2006</td>
+            <td>Spain, Mexico</td>
+            <td>dark fantasy horror film</td>
+            <td>Sergi López, Maribel Verdú</td>
+          </tr>
+          <tr class="to-watch border-b-gray">
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </th>
+            <td>Seven</td>
+            <td>1995</td>
+            <td>United States</td>
+            <td>American crime thriller film</td>
+            <td>Brad Pitt, Morgan Freeman, Gwyneth Paltrow</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
