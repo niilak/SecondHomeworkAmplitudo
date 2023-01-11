@@ -41,11 +41,6 @@ function addNewMovie(e) {
     return;
   }
 
-  //   const input = document.createElement("input");
-  //   input.className = "form-check-input";
-  //   input.value = "";
-  //   input.type = "checkbox";
-  //   input.id = "flexCheckDefault";
   const tr = document.createElement("tr");
 
   const input = createInput(tr);
@@ -78,26 +73,6 @@ function addNewMovie(e) {
   countryElement.value = "";
   noteElement.value = "";
   actorsElement.value = "";
-
-  //   const addMovieName = document.createElement("td");
-  //   addMovieName.appendChild(document.createTextNode(movieElement.value));
-  //   tr.appendChild(addMovieName);
-
-  //   const addMovieYear = document.createElement("td");
-  //   addMovieYear.appendChild(document.createTextNode(yearElement.value));
-  //   tr.appendChild(addMovieYear);
-
-  //   const addMovieCountry = document.createElement("td");
-  //   addMovieCountry.appendChild(document.createTextNode(countryElement.value));
-  //   tr.appendChild(addMovieCountry);
-
-  //   const addMovieNote = document.createElement("td");
-  //   addMovieNote.appendChild(document.createTextNode(noteElement.value));
-  //   tr.appendChild(addMovieNote);
-
-  //   const addMovieActors = document.createElement("td");
-  //   addMovieActors.appendChild(document.createTextNode(actorsElement.value));
-  //   tr.appendChild(addMovieActors);
 
   tableBody.appendChild(tr);
 
