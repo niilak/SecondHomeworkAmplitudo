@@ -1,1 +1,1 @@
-# SecoundHomeworkAmplitudo
+# SecondHomeworkAmplitudo
